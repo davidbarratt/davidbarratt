@@ -6,6 +6,8 @@ Orlando, Florida, United States\
 <david@davidwbarratt.com> \
 [GitHub](https://github.com/davidbarratt) | [LinkedIn](https://linkedin.com/in/davidbarratt/) | [Drupal](https://www.drupal.org/u/davidwbarratt/)
 
+Software Engineer with over fifteen years of professional experience, a degree in Digital Media, a graduate certificate in Entrepreneurship, and actively pursuing a Master of Business Administration.
+
 ## Professional Experience
 
 ### Flex Technology Co. | Founding Engineer
@@ -133,3 +135,10 @@ Learned how to recognize business opportunities, formulate solutions to customer
 _May 2011_
 
 Learned the foundations of user experience, pseudocode, information architecture, semantic content, structured content, and accessibility; and practically implemented these foundations into complex web applications.
+
+## Technical Skills
+Languages & Runtimes: TypeScript, JavaScript, PHP, Rust \
+Frameworks: React, Next.js, Node.js, GraphQL, Angular \
+Platforms & Tools: GitHub Actions, Docker, Vercel, Shopify, WordPress, WooCommerce, PostHog, Cloudflare Workers \
+Testing: Playwright, Jest \
+Practices: CI/CD, A/B Testing, OpenAPI, Zod
