@@ -67,3 +67,58 @@ _November 2020 – February 2023_
 - Migrated multiple applications to a structured logging syntax which significantly improved the observability of the systems.
 - Migrated multiple complex applications into multi-platform Docker containers.
 - Provided technical guidance on countless full stack web development topics to all consumer-facing engineering teams.
+
+### Wikimedia Foundation, the stewards of Wikipedia | Senior Software Engineer, Anti-Harassment
+
+_May 2017 – October 2020_
+
+- Implemented new features in MediaWiki that allowed users on Wikipedia to:
+  - Prevent being emailed by specific users.
+  - Issue partial blocks on specific pages or namespaces rather than the entire wiki.
+  - Perform investigations of users or IP address to address harassment.
+- Created a GraphQL extension for MediaWiki as a proof of concept to allow engineers to make distributed queries across all of Wikimedia’s wikis.
+- Created and maintained Docker’s official MediaWiki container image.
+
+### iHeartMedia | Software Engineer, RadioEdit Platform
+
+_January 2017 - May 2017_
+
+Designed and developed features in TypeScript utilizing the Angular framework for the RadioEdit custom content management system (CMS).
+
+### Golf Channel | Senior Software Engineer, GolfChannel.com
+
+_November 2014 - January 2017_
+
+Led the migration GolfChannel.com from Drupal 7 to a decoupled Drupal 8 and Node.js application while overseeing the implementation of all CMS features.
+
+### Camna, LLC | Senior Web Developer
+
+_October 2012 - October 2014_
+
+Implemented custom designs and wrote custom plugins for new or existing websites built on Drupal, WordPress, ExpressionEngine, CodeIgniter, CiviCRM, Drupal Commerce and WooCommerce.
+
+### RELEVANT Media Group | Digital Development Director
+
+_January 2010 - October 2012_
+
+Led the migration from Joomla! to Drupal 7 and developed forty custom plugins to achieve the desired functionality including a custom subscription management solution.
+
+## Education
+
+### University of Central Florida | Master of Business Administration
+
+_May 2027_
+
+Learning to apply advanced theoretical concepts and knowledge from all functional areas of business through an analytical, decision-making process that focuses on solving practical problems.
+
+### University of Central Florida | Graduate Certificate in Entrepreneurship
+
+_May 2020_
+
+Learned how to recognize business opportunities, formulate solutions to customer problems, design business models, and deliver results.
+
+### University of Central Florida | Bachelor of Arts in Digital Media
+
+_May 2011_
+
+Learned the foundations of user experience, pseudocode, information architecture, semantic content, structured content, and accessibility; and practically implemented these foundations into complex web applications.
