@@ -2,7 +2,6 @@
 
 # David Barratt
 Orlando, Florida, United States\
-[941-266-9539](tel:+19412669539) \
 <david@davidwbarratt.com> \
 [GitHub](https://github.com/davidbarratt) | [LinkedIn](https://linkedin.com/in/davidbarratt/) | [Drupal](https://www.drupal.org/u/davidwbarratt/)
 
