@@ -137,8 +137,18 @@ _May 2011_
 Learned the foundations of user experience, pseudocode, information architecture, semantic content, structured content, and accessibility; and practically implemented these foundations into complex web applications.
 
 ## Technical Skills
-Languages & Runtimes: TypeScript, JavaScript, PHP, Rust \
-Frameworks: React, Next.js, Node.js, GraphQL, Angular \
-Platforms & Tools: GitHub Actions, Docker, Vercel, Shopify, WordPress, WooCommerce, PostHog, Cloudflare Workers \
-Testing: Playwright, Jest \
-Practices: CI/CD, A/B Testing, OpenAPI, Zod
+
+Languages & Runtimes
+: TypeScript, JavaScript, PHP, Rust
+
+Frameworks
+: React, Next.js, Node.js, GraphQL, Angular
+
+Platforms & Tools
+: GitHub Actions, Docker, Vercel, Shopify, WordPress, WooCommerce, PostHog, Cloudflare Workers
+
+Testing
+: Playwright, Jest
+
+Practices
+: CI/CD, A/B Testing, OpenAPI, Zod
