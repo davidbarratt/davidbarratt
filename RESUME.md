@@ -12,34 +12,24 @@ Orlando, Florida, United States\
 
 _May 2024 – Present_
 
-- Migrated PDF generation from PDF Generator to React PDF which significantly improved reliability.
 - Created a Consumer portal for merchant's customers to securely access their health and payment documents.
-- Migrated the frontend applications to the React Compiler.
 - Discovered a bug in WebKit and submitted a patch to Apple.
 - Implemented custom fee support end-to-end which allowed merchants to specify any arbitrary fee as part of the checkout process.
-- Improved the performance of Playwright tests by ensuring they were correctly sharded by browser.
 - Eliminated flaky test failures by enforcing full test isolation in Playwright, improving CI reliability.
 - Resolved PHP dependency conflicts in the WordPress plugin by implementing PHP Scoper, preventing fatal PHP errors on merchant sites.
 - Created a new Shopify extension to connect users to the reimbursement flow in cases where Shopify prevents third-party payment processors.
 - Created a "reimbursement" flow that allowed users to get the documentation they need in order to file for a reimbursement from their HSA/FSA provider.
-- Refactored error tracking and reporting in the backend Rust application
+- Refactored error tracking and reporting in the backend Rust application which significantly reduced the time to error resolution.
 - Created the Flex WooCommerce plugin which featured:
   - Payments (Line Items, Taxes, Discounts, Coupons, etc.)
   - Refunds across multiple payment methods
   - Product & Variant sync in the background using Action Scheduler.
   - Webhooks
   - Sentry Telemetry
-- Added support for 3DS payment verification
-- Added support for embeded (iframe) and popup checkout implementations.
-- Provided merchants with the ability to perform multi-payment method refunds from within the merchant dashboard.
-- Added subscription support to the merchant dashboard.
-- Resolved many timezone related React hydration issues.
-- Created a custom authentication flow using Twilio.
+- Added support for 3DS payment verification as well as embedded (iframe) and popup checkout implementations.
+- Resolved every timezone-related React hydration issue, increasing the visual stability of our frontend applications.
 - Implemented an A/B testing process and framework using PostHog and Vercel Toolbar that powered real product decisions.
-- Ensured the frontend applications utilized TypeScript in the strictest possible settings.
-- Refactored the front-end checkout application from a (noncompliant) letter of medical necessity form to an LLM based consultation chat flow using Vercel's AI SDK.
-- Added support for "test mode" to all frontend applications.
-- Implemented an end-to-end testing system using Playwright
+- Refactored the front-end checkout application from a (noncompliant) letter of medical necessity form to a (compliant) LLM based consultation chat flow using Vercel's AI SDK.
 - Implemented schema-first type generation using OpenAPI, JSON Schema, and Zod.
 - Created a continuous integration (CI) pipeline using GitHub Actions for all backend and frontend services.
 
