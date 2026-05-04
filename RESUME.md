@@ -14,7 +14,7 @@ Software Engineer with over fifteen years of professional experience, a degree i
 
 _May 2024 – Present_
 
-- Created a Consumer portal for merchant's customers to securely access their health and payment documents.
+- Created a consumer portal for merchant's customers to securely access their health and payment documents.
 - Discovered a bug in WebKit and submitted a patch to Apple.
 - Implemented custom fee support end-to-end which allowed merchants to specify any arbitrary fee as part of the checkout process.
 - Eliminated flaky test failures by enforcing full test isolation in Playwright, improving CI reliability.
