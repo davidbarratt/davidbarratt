@@ -14,26 +14,13 @@ Software Engineer with over fifteen years of professional experience, a degree i
 
 _May 2024 – Present_
 
-- Created a consumer portal for merchant's customers to securely access their health and payment documents.
-- Discovered a bug in WebKit and submitted a patch to Apple.
-- Implemented custom fee support end-to-end which allowed merchants to specify any arbitrary fee as part of the checkout process.
-- Eliminated flaky test failures by enforcing full test isolation in Playwright, improving CI reliability.
-- Resolved PHP dependency conflicts in the WordPress plugin by implementing PHP Scoper, preventing fatal PHP errors on merchant sites.
-- Created a new Shopify extension to connect users to the reimbursement flow in cases where Shopify prevents third-party payment processors.
-- Created a "reimbursement" flow that allowed users to get the documentation they need in order to file for a reimbursement from their HSA/FSA provider.
-- Refactored error tracking and reporting in the backend Rust application which significantly reduced the time to error resolution.
-- Created the Flex WooCommerce plugin which featured:
-  - Payments (Line Items, Taxes, Discounts, Coupons, etc.)
-  - Refunds across multiple payment methods
-  - Product & Variant sync in the background using Action Scheduler.
-  - Webhooks
-  - Sentry Telemetry
-- Added support for 3DS payment verification as well as embedded (iframe) and popup checkout implementations.
-- Resolved every timezone-related React hydration issue, increasing the visual stability of our frontend applications.
-- Implemented an A/B testing process and framework using PostHog and Vercel Toolbar that powered real product decisions.
-- Refactored the front-end checkout application from a (noncompliant) letter of medical necessity form to a (compliant) LLM based consultation chat flow using Vercel's AI SDK.
-- Implemented schema-first type generation using OpenAPI, JSON Schema, and Zod.
-- Created a continuous integration (CI) pipeline using GitHub Actions for all backend and frontend services.
+- Built an AI-powered checkout consultation flow that replaces static forms with an LLM-driven dialogue to determine HSA/FSA eligibility — the company's core product differentiator.
+- Built the Flex WooCommerce plugin from scratch and shipped it to WordPress.org with an automated release pipeline covering builds, GitHub Releases, and SVN deployment.
+- Created the consumer portal where HSA/FSA cardholders view orders, receipts, and Letters of Medical Necessity.
+- Fixed a critical IDOR vulnerability in the WooCommerce order-completion endpoint, preventing unauthorized order manipulation.
+- Hardened the CI/CD pipeline to prevent untested code from reaching production.
+- Designed a custom fee system with proportional line-item distribution, letting merchants attach arbitrary fees while preserving correct coupon discounting.
+- Created a self-contained development container enabling Claude Code to operate as an autonomous engineering agent across Rust, Node.js, and PHP.
 
 ### Drizly, an Uber Company | Senior Staff Engineer, Consumer
 
