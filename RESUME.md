@@ -6,11 +6,13 @@ Orlando, Florida, United States
 <david@davidwbarratt.com>  
 [GitHub](https://github.com/davidbarratt) | [LinkedIn](https://linkedin.com/in/davidbarratt/) | [Drupal](https://www.drupal.org/u/davidwbarratt/)
 
-Founding Engineer (Senior Staff) with 15+ years of full-stack experience building high-performance web applications. Deep expertise in TypeScript, React/Next.js, PHP/Drupal, and cloud infrastructure. Proven track record of architecting systems that improve performance (up to 80% latency reduction), save costs ($380K/year), and ship to millions of users. MBA candidate with a graduate certificate in Entrepreneurship, bringing a product-minded, business-first approach to engineering decisions.
+## Professional Summary
+
+Founding Engineer (Senior Staff) with 15+ years building high-performance web applications in TypeScript, React/Next.js, Node.js, PHP/Drupal, and cloud infrastructure (Docker, CI/CD, edge caching). Architected systems that cut latency by 80%, saved $380K/year in infrastructure costs, and shipped to millions of users. MBA Candidate (Expected 2027) with a Graduate Certificate in Entrepreneurship, combining technical depth with a business-first approach to product decisions.
 
 ## Technical Skills
 
-- **Languages & Runtimes:** TypeScript, JavaScript, PHP, Node.js, Rust, Ruby
+- **Languages & Runtimes:** TypeScript, JavaScript, PHP, Node.js, Rust, Ruby, SQL
 - **Frameworks:** React, Next.js, Angular, GraphQL, Drupal, WordPress, WooCommerce, Ruby on Rails
 - **Platforms & Tools:** Docker, GitHub Actions, Vercel, Cloudflare Workers, Shopify, PostHog
 - **Testing:** Playwright, Jest, Vitest, PHPUnit
@@ -32,28 +34,23 @@ Founding Engineer (Senior Staff) with 15+ years of full-stack experience buildin
 ### Drizly, an Uber Company | Senior Staff Engineer, Consumer
 *February 2023 – April 2024*
 
-- Collaborated with engineering leaders to simplify Drizly's technical architecture following an updated business direction.
+- Led architectural simplification of Drizly's technical stack following an updated business direction.
 - Evaluated performance and developer experience tradeoffs and led the migration from Next.js Pages Router to App Router.
-- Proposed, architected, and achieved consensus on:
+- Architected and drove adoption of:
   - An implementation for inline content editing within the Scrivito CMS.
   - Splitting the product taxonomy from the consumer application navigation.
 - Implemented a continuous improvement system to progressively migrate engineering teams to TypeScript.
-- Resolved several critical bugs that blocked the Next.js Pages Router to App Router migration.
 - Migrated complex CI workflows from Jenkins to GitHub Actions.
 - Migrated the Docker Compose setup to use Compose Watch, reducing the feedback loop for previewing changes by 57% vs. deploying to staging.
-- Migrated several large parts of Drizly's JavaScript codebase to TypeScript.
-- Performed several major upgrades of core system dependencies.
 
 ### Drizly, an Uber Company | Staff Software Engineer, Consumer
 *November 2020 – February 2023*
 
 - Debugged and resolved a critical checkout-blocking issue caused by the Rails session cookie exceeding the browser's cookie size limit.
-- Identified causes of Google Core Web Vital (CWV) threshold violations and proposed solutions.
 - Resolved a critical Hypernova issue causing Cumulative Layout Shift (CLS) to far exceed Google's threshold.
-- Created a technical roadmap for the primary consumer web application.
 - Instrumented geolocation services usage, exposing a large-scale data harvesting operation. Blocking it saved $380,000/year (42% cost reduction).
 - Determined that migrating from legacy codebase to Next.js alone would reduce TTFB by 39% and LCP by 24%.
-- Proposed, architected, and achieved consensus on:
+- Architected and drove adoption of:
   - A service to retrieve and cache data from the Scrivito CMS API.
   - A migration strategy for client-facing APIs to an abstracted service-oriented architecture.
   - A comprehensive edge caching strategy using bubbling cache tags for infinite TTL with dependency-based invalidation.
@@ -62,11 +59,10 @@ Founding Engineer (Senior Staff) with 15+ years of full-stack experience buildin
   - Reducing data science service latency to near-zero by migrating to portable executables.
   - Preventing the WAF from blocking legitimate customers at checkout.
 - Created a Cloudflare Workers cache proxy for Scrivito API responses, reducing client-side request latency by 80%.
-- Documented and advocated best practices; authored guides on edge caching, client-side state, TypeScript, and JS/TS testing.
+- Authored 4+ engineering guides on edge caching, client-side state, TypeScript, and JS/TS testing; established team-wide best practices.
 - Designed and implemented the integration strategy between Next.js and the Scrivito CMS.
 - Mentored a mid-level engineer through pair programming, supporting their promotion to senior engineer.
 - Debugged and worked around a critical production error caused by a browser vendor's incorrect implementation of a web specification.
-- Migrated multiple complex applications into multi-platform Docker containers.
 
 ### Wikimedia Foundation | Senior Software Engineer, Anti-Harassment
 *May 2017 – October 2020*
