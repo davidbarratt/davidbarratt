@@ -2,20 +2,27 @@
 
 # David Barratt
 
-Orlando, Florida, United States\
-<david@davidwbarratt.com> \
+Orlando, Florida, United States  
+<david@davidwbarratt.com>  
 [GitHub](https://github.com/davidbarratt) | [LinkedIn](https://linkedin.com/in/davidbarratt/) | [Drupal](https://www.drupal.org/u/davidwbarratt/)
 
-Software Engineer with over fifteen years of professional experience, a degree in Digital Media, a graduate certificate in Entrepreneurship, and actively pursuing a Master of Business Administration.
+Founding Engineer (Senior Staff) with 15+ years of full-stack experience building high-performance web applications. Deep expertise in TypeScript, React/Next.js, PHP/Drupal, and cloud infrastructure. Proven track record of architecting systems that improve performance (up to 80% latency reduction), save costs ($380K/year), and ship to millions of users. MBA candidate with a graduate certificate in Entrepreneurship, bringing a product-minded, business-first approach to engineering decisions.
+
+## Technical Skills
+
+- **Languages & Runtimes:** TypeScript, JavaScript, PHP, Node.js, Rust, Ruby
+- **Frameworks:** React, Next.js, Angular, GraphQL, Drupal, WordPress, WooCommerce, Ruby on Rails
+- **Platforms & Tools:** Docker, GitHub Actions, Vercel, Cloudflare Workers, Shopify, PostHog
+- **Testing:** Playwright, Jest, Vitest, PHPUnit
+- **Practices:** CI/CD, Edge Caching, OpenAPI, Zod, A/B Testing
 
 ## Professional Experience
 
 ### Flex Technology Co. | Founding Engineer
+*May 2024 – Present*
 
-_May 2024 – Present_
-
-- Built an AI-powered checkout consultation flow that replaces static forms with an LLM-driven dialogue to determine HSA/FSA eligibility.
-- Built the Flex WooCommerce plugin from scratch and shipped it to WordPress.org with an automated release pipeline covering builds, GitHub Releases, and SVN deployment.
+- Built an AI-powered checkout consultation flow using LLM-driven dialogue to determine HSA/FSA eligibility, replacing static forms.
+- Built the Flex WooCommerce plugin from scratch and shipped it to WordPress.org with an automated release pipeline (builds, GitHub Releases, SVN deployment).
 - Created the consumer portal where HSA/FSA cardholders view orders, receipts, and Letters of Medical Necessity.
 - Fixed a critical IDOR vulnerability in the WooCommerce order-completion endpoint, preventing unauthorized order manipulation.
 - Hardened the CI/CD pipeline to prevent untested code from reaching production.
@@ -23,119 +30,83 @@ _May 2024 – Present_
 - Created a self-contained development container enabling Claude Code to operate as an autonomous engineering agent across Rust, Node.js, and PHP.
 
 ### Drizly, an Uber Company | Senior Staff Engineer, Consumer
+*February 2023 – April 2024*
 
-_February 2023 – April 2024_
-
-- Collaborated with engineering leaders to simplify Drizly’s technical architecture given an updated business direction.
-- Evaluated the performance and developer experience tradeoffs to migrate from Next.js’ Pages Router to App Router.
+- Collaborated with engineering leaders to simplify Drizly's technical architecture following an updated business direction.
+- Evaluated performance and developer experience tradeoffs and led the migration from Next.js Pages Router to App Router.
 - Proposed, architected, and achieved consensus on:
-  - Migrating from Next.js’ Pages Router to App Router.
-  - An implementation for inline content editing within the Scrivito content management system (CMS)
+  - An implementation for inline content editing within the Scrivito CMS.
   - Splitting the product taxonomy from the consumer application navigation.
-- Implemented a continuous improvement system to encourage engineering teams to progressively migrate to TypeScript.
-- Resolved several critical bugs that blocked the migration from Next.js’ Pages Router to App Router.
-- Migrated several complex continuous integration (CI) workflows from Jenkins to GitHub Actions.
-- Migrated the Docker Compose implementation of the primary web application to utilize Compose Watch which enabled engineers to preview their changes locally in a production-like environment. The feedback loop to preview changes was reduced by 57% when compared to deploying to a staging server.
-- Migrated several large parts of Drizly’s JavaScript code base to TypeScript.
+- Implemented a continuous improvement system to progressively migrate engineering teams to TypeScript.
+- Resolved several critical bugs that blocked the Next.js Pages Router to App Router migration.
+- Migrated complex CI workflows from Jenkins to GitHub Actions.
+- Migrated the Docker Compose setup to use Compose Watch, reducing the feedback loop for previewing changes by 57% vs. deploying to staging.
+- Migrated several large parts of Drizly's JavaScript codebase to TypeScript.
 - Performed several major upgrades of core system dependencies.
 
 ### Drizly, an Uber Company | Staff Software Engineer, Consumer
+*November 2020 – February 2023*
 
-_November 2020 – February 2023_
-
-- Debugged and resolved a critical issue that prevented customers from being able to checkout due to the Rails session cookie exceeding the browser’s cookie size limit.
-- Identified the causes of exceeding Google’s Core Web Vital (CWV) metric thresholds and proposed solutions.
-- Debugged and resolved a critical issue with Hypernova that caused the Cumulative Layout Shift (CLS) metric to far exceed Google’s threshold.
+- Debugged and resolved a critical checkout-blocking issue caused by the Rails session cookie exceeding the browser's cookie size limit.
+- Identified causes of Google Core Web Vital (CWV) threshold violations and proposed solutions.
+- Resolved a critical Hypernova issue causing Cumulative Layout Shift (CLS) to far exceed Google's threshold.
 - Created a technical roadmap for the primary consumer web application.
-- Instrumented geolocation services usage, which exposed a large-scale data harvesting operation. Blocking the operation saved the company $380,000 each year by reducing the geolocation service costs by 42%.
-- Determined that migrating the primary consumer web application from the legacy code base to Next.js, without any additional optimizations, would reduce the Time to First Byte (TTFB) by 39% and Largest Contentful Paint (LCP) by 24%.
+- Instrumented geolocation services usage, exposing a large-scale data harvesting operation. Blocking it saved $380,000/year (42% cost reduction).
+- Determined that migrating from legacy codebase to Next.js alone would reduce TTFB by 39% and LCP by 24%.
 - Proposed, architected, and achieved consensus on:
-  - A service to retrieve and cache data from the Scrivito content management system (CMS) API
-  - A migration strategy for migrating Drizly’s client facing APIs to an abstracted service-oriented architecture.
-  - A comprehensive edge caching strategy utilizing bubbling cache tags from dependent services to store content with an infinite time to live (TTL) while invalidating on dependency update.
-  - A cache invalidation service to invalidate dynamic HTTP responses from an edge cache.
-  - An incremental migration strategy from the existing legacy code base to the Next.js framework.
-  - A solution to reduce the latency of some data science services to near zero by migrating the services to a portable executable.
-  - A mechanism to prevent the Web Application Firewall (WAF) from blocking legitimate customers from completing the checkout process.
-- Documented and advocated best practices across several engineering teams and wrote a best practice guide for:
-  - Caching dynamic HTTP responses in an edge cache.
-  - Persisting client-side state
-  - Using TypeScript
-  - Testing JavaScript & TypeScript code
-- Designed and implemented an integration strategy between Next.js and the Scrivito content management system (CMS).
-- Mentored a mid-level software engineer using pair programming and assisted in teaching them the technical skills required for a promotion to senior engineer.
-- Created a cache proxy using Cloudflare Workers to cache API responses from the Scrivito API which reduced the latency of these requests from the client applications by 80%.
-- Debugged and created a work-around for a critical error in production that was caused by a browser vendor’s incorrect implementation of an existing specification.
+  - A service to retrieve and cache data from the Scrivito CMS API.
+  - A migration strategy for client-facing APIs to an abstracted service-oriented architecture.
+  - A comprehensive edge caching strategy using bubbling cache tags for infinite TTL with dependency-based invalidation.
+  - A cache invalidation service for dynamic HTTP responses from edge cache.
+  - An incremental migration strategy from legacy codebase to Next.js.
+  - Reducing data science service latency to near-zero by migrating to portable executables.
+  - Preventing the WAF from blocking legitimate customers at checkout.
+- Created a Cloudflare Workers cache proxy for Scrivito API responses, reducing client-side request latency by 80%.
+- Documented and advocated best practices; authored guides on edge caching, client-side state, TypeScript, and JS/TS testing.
+- Designed and implemented the integration strategy between Next.js and the Scrivito CMS.
+- Mentored a mid-level engineer through pair programming, supporting their promotion to senior engineer.
+- Debugged and worked around a critical production error caused by a browser vendor's incorrect implementation of a web specification.
 - Migrated multiple complex applications into multi-platform Docker containers.
 
-### Wikimedia Foundation, the stewards of Wikipedia | Senior Software Engineer, Anti-Harassment
+### Wikimedia Foundation | Senior Software Engineer, Anti-Harassment
+*May 2017 – October 2020*
 
-_May 2017 – October 2020_
-
-- Implemented new features in MediaWiki that allowed users on Wikipedia to:
-  - Prevent being emailed by specific users.
-  - Issue partial blocks on specific pages or namespaces rather than the entire wiki.
-  - Perform investigations of users or IP address to address harassment.
-- Created a GraphQL extension for MediaWiki as a proof of concept to allow engineers to make distributed queries across all of Wikimedia’s wikis.
-- Created and maintained Docker’s official MediaWiki container image.
+- Implemented MediaWiki features enabling Wikipedia users to block email from specific users, issue partial blocks on pages/namespaces, and investigate users/IPs for harassment.
+- Created a GraphQL extension for MediaWiki as a proof of concept for distributed queries across all Wikimedia wikis.
+- Created and maintained Docker's official MediaWiki container image.
 
 ### iHeartMedia | Software Engineer, RadioEdit Platform
+*January 2017 – May 2017*
 
-_January 2017 - May 2017_
-
-Designed and developed features in TypeScript utilizing the Angular framework for the RadioEdit custom content management system (CMS).
+- Designed and developed TypeScript/Angular features for the RadioEdit custom CMS.
 
 ### Golf Channel | Senior Software Engineer, GolfChannel.com
+*November 2014 – January 2017*
 
-_November 2014 - January 2017_
-
-Led the migration GolfChannel.com from Drupal 7 to a decoupled Drupal 8 and Node.js application while overseeing the implementation of all CMS features.
+- Led the migration of GolfChannel.com from Drupal 7 to a decoupled Drupal 8 and Node.js application, overseeing all CMS feature implementations.
 
 ### Camna, LLC | Senior Web Developer
+*October 2012 – October 2014*
 
-_October 2012 - October 2014_
-
-Implemented custom designs and wrote custom plugins for new or existing websites built on Drupal, WordPress, ExpressionEngine, CodeIgniter, CiviCRM, Drupal Commerce and WooCommerce.
+- Implemented custom designs and wrote plugins for websites built on Drupal, WordPress, ExpressionEngine, CodeIgniter, CiviCRM, Drupal Commerce, and WooCommerce.
 
 ### RELEVANT Media Group | Digital Development Director
+*January 2010 – October 2012*
 
-_January 2010 - October 2012_
+- Led the migration from Joomla! to Drupal 7 and developed 40+ custom plugins including a subscription management solution.
 
-Led the migration from Joomla! to Drupal 7 and developed forty custom plugins to achieve the desired functionality including a custom subscription management solution.
+## Open Source Projects
+
+- **Flex HSA/FSA Payments WooCommerce Plugin** ([source](https://github.com/joinflexhealth/woocommerce)) — Built and published to WordPress.org with automated CI/CD pipeline.
+- **MediaWiki Docker Image** ([source](https://github.com/wikimedia/mediawiki-docker)) — Created and maintain Docker's official MediaWiki container image, used by developers and organizations worldwide.
+- **MediaWiki GraphQL Extension** ([source](https://github.com/wikimedia/mediawiki-extensions-GraphQL)) — Built a GraphQL extension enabling distributed queries across all Wikimedia wikis.
+- **Phabricator Docker Image** ([source](https://github.com/phabricator-docker/phabricator)) — Created the official Docker container image for Phabricator.
+- **Microsoft OneDrive CLI** ([source](https://github.com/onedrivejs/onedrive)) — Node.js CLI tool for OneDrive file management.
+- **RSS Reader (Chickaree)** ([source](https://github.com/chickaree)) — Next.js-based RSS reader application.
+- **Drupal Modules** — Authored 6+ published modules including Display Field Copy, Menu Normalizer, REST Menu Tree, and Composer Vendor Autoload.
 
 ## Education
 
-### University of Central Florida | Master of Business Administration
-
-_May 2027_
-
-Learning to apply advanced theoretical concepts and knowledge from all functional areas of business through an analytical, decision-making process that focuses on solving practical problems.
-
-### University of Central Florida | Graduate Certificate in Entrepreneurship
-
-_May 2020_
-
-Learned how to recognize business opportunities, formulate solutions to customer problems, design business models, and deliver results.
-
-### University of Central Florida | Bachelor of Arts in Digital Media
-
-_May 2011_
-
-Learned the foundations of user experience, pseudocode, information architecture, semantic content, structured content, and accessibility; and practically implemented these foundations into complex web applications.
-
-## Technical Skills
-
-Languages & Runtimes
-: TypeScript, JavaScript, PHP, Rust
-
-Frameworks
-: React, Next.js, Node.js, GraphQL, Angular
-
-Platforms & Tools
-: GitHub Actions, Docker, Vercel, Shopify, WordPress, WooCommerce, PostHog, Cloudflare Workers
-
-Testing
-: Playwright, Jest
-
-Practices
-: CI/CD, A/B Testing, OpenAPI, Zod
+- **Master of Business Administration** — University of Central Florida (May 2027)
+- **Graduate Certificate in Entrepreneurship** — University of Central Florida (May 2020)
+- **Bachelor of Arts in Digital Media** — University of Central Florida (May 2011)
