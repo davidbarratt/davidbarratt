@@ -14,7 +14,7 @@ Software Engineer with over fifteen years of professional experience, a degree i
 
 _May 2024 – Present_
 
-- Built an AI-powered checkout consultation flow that replaces static forms with an LLM-driven dialogue to determine HSA/FSA eligibility — the company's core product differentiator.
+- Built an AI-powered checkout consultation flow that replaces static forms with an LLM-driven dialogue to determine HSA/FSA eligibility.
 - Built the Flex WooCommerce plugin from scratch and shipped it to WordPress.org with an automated release pipeline covering builds, GitHub Releases, and SVN deployment.
 - Created the consumer portal where HSA/FSA cardholders view orders, receipts, and Letters of Medical Necessity.
 - Fixed a critical IDOR vulnerability in the WooCommerce order-completion endpoint, preventing unauthorized order manipulation.
