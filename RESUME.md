@@ -13,14 +13,15 @@ Founding Engineer (Senior Staff) with 15+ years building high-performance web ap
 ## Technical Skills
 
 - **Languages & Runtimes:** TypeScript, JavaScript, PHP, Node.js, Rust, Ruby, SQL
-- **Frameworks:** React, Next.js, Angular, Ruby on Rails
-- **Cloud Services:** Amazon Web Services (AWS), Cloudflare Workers, Vercel
-- **CMS & E-commerce:** Drupal, WordPress, WooCommerce, Shopify, Acquia
+- **Frameworks:** React, Next.js, Angular, Ruby on Rails, Zod
+- **Cloud Services:** Amazon Web Services (AWS), Cloudflare Workers, Vercel, Acquia
+- **CMS & E-commerce:** Drupal, WordPress, WooCommerce, Shopify
+- **Databases:** PostgreSQL, MariaDB, MySQL, SQLite, Redis
 - **Data & Analytics:** Snowflake, Metabase, PostHog
 - **Observability:** Sentry, New Relic
-- **Platforms & Tools:** Docker, GitHub Actions, Varnish
+- **Infrastructure & DevOps:** Docker, GitHub Actions, Varnish
 - **Testing:** Playwright, Jest, Vitest, PHPUnit
-- **APIs & Standards:** GraphQL, OpenAPI, Zod
+- **APIs & Standards:** GraphQL, OpenAPI
 - **Practices:** CI/CD, Edge Caching, A/B Testing
 
 ## Professional Experience
