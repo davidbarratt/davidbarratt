@@ -1,0 +1,94 @@
+/* Compact resume styling — consistent, readable */
+
+@page {
+  size: A4;
+  margin: 12mm 10mm;
+}
+
+body {
+  font-family: "Inter", "Source Sans Pro", system-ui, -apple-system, sans-serif;
+  font-size: 9pt;
+  line-height: 1.35;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+/* Name — only larger element */
+h1 {
+  font-size: 14pt;
+  font-weight: 700;
+  margin: 0 0 2pt 0;
+  color: #111;
+}
+
+/* Section headers */
+h2 {
+  font-size: 10pt;
+  font-weight: 700;
+  margin: 10pt 0 3pt 0;
+  padding-bottom: 2pt;
+  border-bottom: 1.5pt solid #2563eb;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #1e3a5f;
+}
+
+/* Job titles — close to body size */
+h3 {
+  font-size: 9.5pt;
+  font-weight: 600;
+  margin: 7pt 0 0 0;
+  color: #1a1a1a;
+}
+
+/* Everything else stays at body size */
+p,
+li,
+em,
+a,
+strong {
+  font-size: 9pt;
+}
+
+p {
+  margin: 2pt 0;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+ul {
+  margin: 2pt 0;
+  padding-left: 14pt;
+}
+
+li {
+  margin: 1.5pt 0;
+}
+
+strong {
+  font-weight: 600;
+  color: #111;
+}
+
+em {
+  font-style: italic;
+}
+
+/* Tighten spacing around experience blocks */
+h3 + em,
+h3 + p {
+  margin-top: 0;
+}
+
+/* Contact line */
+body > p:first-of-type {
+  margin: 1pt 0 4pt 0;
+  color: #444;
+}
+
+body > p:first-of-type a {
+  color: #2563eb;
+}
