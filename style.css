@@ -1,7 +1,7 @@
 /* Compact resume styling — consistent, readable */
 
 @page {
-  size: A4;
+  size: letter;
   margin: 12mm 10mm;
 }
 
