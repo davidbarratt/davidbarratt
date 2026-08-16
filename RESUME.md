@@ -8,7 +8,7 @@ Orlando, Florida, United States
 
 ## Professional Summary
 
-Founding Engineer (Senior Staff) with 15+ years building high-performance web applications in TypeScript, React/Next.js, Node.js, PHP/Drupal, and cloud infrastructure (Docker, CI/CD, edge caching). Architected systems that cut latency by 80%, saved $380K/year in infrastructure costs, and shipped to millions of users. MBA Candidate (Expected 2027) with a Graduate Certificate in Entrepreneurship, combining technical depth with a business-first approach to product decisions.
+Founding Engineer (Senior Staff) with 16+ years building high-performance web applications in TypeScript, React/Next.js, Node.js, PHP/Drupal, and cloud infrastructure (Docker, CI/CD, edge caching). Architected systems that cut latency by 80%, saved $380K/year in infrastructure costs, and shipped to millions of users. MBA Candidate (Expected 2027) with a Graduate Certificate in Entrepreneurship, combining technical depth with a business-first approach to product decisions.
 
 ## Technical Skills
 
