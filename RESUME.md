@@ -8,7 +8,7 @@ Orlando, Florida, United States
 
 ## Professional Summary
 
-Founding Engineer (Senior Staff) with 16+ years building high-performance web applications in TypeScript, React/Next.js, Node.js, PHP/Drupal, and cloud infrastructure (Docker, CI/CD, edge caching). Architected systems that cut latency by 80%, saved $380K/year in infrastructure costs, and shipped to millions of users. MBA Candidate (Expected 2027) with a Graduate Certificate in Entrepreneurship, combining technical depth with a business-first approach to product decisions.
+Founding Engineer (Senior Staff) with 16+ years building high-performance web applications in TypeScript, React/Next.js, Node.js, PHP/Drupal, and cloud infrastructure (Docker, CI/CD, edge caching). Architected systems that cut latency by 80%, saved $380K/year in infrastructure costs, lifted checkout conversion 6.8%, and shipped to millions of users. MBA Candidate (Expected 2027) with a Graduate Certificate in Entrepreneurship, combining technical depth with a business-first approach to product decisions.
 
 ## Technical Skills
 
@@ -20,7 +20,7 @@ Founding Engineer (Senior Staff) with 16+ years building high-performance web ap
 - **Data & Analytics:** Snowflake, Metabase, PostHog
 - **Observability:** Sentry, New Relic
 - **Infrastructure & DevOps:** Docker, GitHub Actions, Varnish
-- **Testing:** Playwright, Jest, Vitest, PHPUnit
+- **Testing:** Playwright, Jest, Vitest, PHPUnit, PHPStan
 - **APIs & Standards:** GraphQL, OpenAPI
 - **Practices:** CI/CD, Edge Caching, A/B Testing
 
@@ -30,11 +30,11 @@ Founding Engineer (Senior Staff) with 16+ years building high-performance web ap
 *May 2024 – Present*
 
 - Built an AI-powered checkout consultation flow using LLM-driven dialogue to determine HSA/FSA eligibility, replacing static forms.
-- Built the Flex WooCommerce plugin from scratch and shipped it to WordPress.org with an automated release pipeline (builds, GitHub Releases, SVN deployment).
-- Created the consumer portal where HSA/FSA cardholders view orders, receipts, and Letters of Medical Necessity.
-- Fixed a critical IDOR vulnerability in the WooCommerce order-completion endpoint, preventing unauthorized order manipulation.
-- Hardened the CI/CD pipeline to prevent untested code from reaching production.
-- Designed a custom fee system with proportional line-item distribution, letting merchants attach arbitrary fees while preserving correct coupon discounting.
+- Analyzed an A/B test of the checkout diagnosis flow and rolled out the winning variant, lifting checkout conversion 6.8% and cutting disqualifications 69%.
+- Designed and built a custom fee system with proportional line-item distribution across the Rust backend, WooCommerce plugin, checkout, and merchant dashboard, letting partners attach arbitrary fees while preserving correct coupon discounting.
+- Kept payments correct through a 3× traffic step-up, root-causing and fixing race conditions that double-charged or blocked customers — duplicate idempotency keys, a 3DS timing flaw, and expired checkouts on backgrounded tabs.
+- Scoped and built the consumer portal where HSA/FSA cardholders manage orders, receipts, invoices, refunds, and Letters of Medical Necessity; portal users repurchased within 60 days at 19.1% vs. 12.2% for non-portal buyers.
+- Built the Flex WooCommerce plugin from scratch, shipped it to WordPress.org with an automated release pipeline (builds, GitHub Releases, SVN deployment); fixed a critical IDOR vulnerability in its order-completion endpoint, preventing unauthorized order manipulation.
 - Created a self-contained development container enabling Claude Code to operate as an autonomous engineering agent across Rust, Node.js, and PHP.
 
 ### Drizly, an Uber Company | Senior Staff Engineer, Consumer
