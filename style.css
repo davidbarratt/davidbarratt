@@ -18,6 +18,7 @@ h1 {
   font-size: 14pt;
   font-weight: 700;
   margin: 0 0 2pt 0;
+  border-bottom: none; /* override convpdf default template */
   color: #111;
 }
 
@@ -91,4 +92,8 @@ body > p:first-of-type {
 
 body > p:first-of-type a {
   color: #2563eb;
+}
+
+h3, h3 + p {
+  page-break-after: avoid;
 }

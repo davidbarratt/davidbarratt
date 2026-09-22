@@ -1,0 +1,45 @@
+/* Cover letter styling — matches style.css (resume) so the two look
+   consistent: same font, heading treatment (bold + blue underline),
+   colors (#111 / #374151 / #1a56db), and link style.
+   Looser than the resume by design: 10.5pt body / 1.5 line-height for
+   comfortable prose instead of the resume's 9pt dense layout. */
+
+@page {
+  size: letter;
+}
+
+/* convpdf wraps content in body.convpdf-default-layout — that class
+   rule beats a plain body{} rule (specificity), so the type scale is
+   set on the class here. */
+.convpdf-default-layout {
+  font-family: "Source Sans Pro", -apple-system, "Helvetica Neue", Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.5;
+  color: #111;
+}
+
+h1 {
+  font-size: 14pt;
+  font-weight: 700;
+  letter-spacing: 0.2pt;
+  line-height: 1.3;
+  margin: 0 0 4pt;
+  padding-bottom: 4pt;
+  border-bottom: 2px solid #1a56db;
+  color: #111;
+}
+
+/* Company/location line — styled like the resume's contact line */
+h1 + p {
+  color: #374151;
+  margin: 0 0 10pt;
+}
+
+p {
+  margin: 0 0 8pt 0;
+}
+
+a {
+  color: #1a56db;
+  text-decoration: none;
+}
