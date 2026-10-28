@@ -5,8 +5,28 @@
   margin: 12mm 10mm;
 }
 
-body {
-  font-family: "Inter", "Source Sans Pro", system-ui, -apple-system, sans-serif;
+/* convpdf prints its own classes on <body> (class="markdown-body
+   convpdf-default-layout") and the template styles that class, so a bare
+   `body {}` rule loses the cascade and its font-size / line-height / color are
+   silently ignored (rendered at 1.6 leading instead of the 1.35 set here).
+   Matching the classes makes these declarations win. */
+body,
+body.markdown-body,
+body.convpdf-default-layout {
+  /* Do NOT add "Inter" back to this stack. Inter is not installed here (the
+     stack always resolved to DejaVu Sans), and on machines where it *is*
+     installed Chromium writes Inter's `.case` punctuation glyphs
+     (hyphen.case, parenleft.case, endash.case...) into the PDF ToUnicode map
+     as their PUA codepoints U+E080..U+E09F — the PDF looks perfect but its
+     text layer extracts "(AWS)" and "May 2024 – Present" as garbage, and
+     forcing it off with font-feature-settings makes Chromium emit Type 3
+     fonts instead, which is worse for ATS. Any font added here must pass the
+     extraction check below first:
+       convpdf x.md -o /tmp/x.pdf -f letter && python3 -c "import pypdf;\
+     t=''.join(p.extract_text() for p in pypdf.PdfReader('/tmp/x.pdf').pages);\
+     print([c for c in t if 0xE000<=ord(c)<=0xF8FF])"
+     Must print []. */
+  font-family: sans-serif;
   font-size: 9pt;
   line-height: 1.35;
   color: #1a1a1a;
@@ -96,4 +116,16 @@ body > p:first-of-type a {
 
 h3, h3 + p {
   page-break-after: avoid;
+}
+
+/* Keep a bullet whole across a page break and never strand a section heading
+   at the foot of a page with its first item on the next one. */
+li {
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+
+h2 {
+  page-break-after: avoid;
+  break-after: avoid;
 }
