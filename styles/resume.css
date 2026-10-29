@@ -26,6 +26,23 @@ body.convpdf-default-layout {
      t=''.join(p.extract_text() for p in pypdf.PdfReader('/tmp/x.pdf').pages);\
      print([c for c in t if 0xE000<=ord(c)<=0xF8FF])"
      Must print []. */
+  /* Do NOT remove the ligature block below. DejaVu Sans applies liga/clig by
+     default in Chromium, so ff / fi / fl / ffi are written into the PDF ToUnicode
+     map as U+FB00..U+FB03: "Staff" extracts as "Staﬀ" and an ATS doing exact
+     string matching never sees the target job title, "conflicting",
+     "retrofitting", "defines", etc. — silently undoing the resume's ASCII
+     normalisation at the file layer. font-variant-ligatures suppresses the
+     substitution at the CSS level and keeps the normal Type0 / CIDFontType2
+     embedding (verified: same BaseFont set, no Type 3), so the earlier
+     .case-glyph warning does NOT apply here — that regression came from forcing
+     Inter's features off, not from this. Confirm after any font/template change:
+       convpdf david-barratt.md -o /tmp/x.pdf -c styles/resume.css -f letter && \
+       python3 -c "import subprocess;t=subprocess.run(['markitdown','/tmp/x.pdf'],\
+       capture_output=True,text=True).stdout;print([hex(ord(c)) for c in sorted(set(t)) if ord(c)>127])"
+     Must print []. Also spot-check that "Staff Software Engineer" is present
+     verbatim in the extracted text. */
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
   font-family: sans-serif;
   font-size: 9pt;
   line-height: 1.35;
