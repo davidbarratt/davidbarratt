@@ -6,12 +6,25 @@
 
 @page {
   size: letter;
+  margin: 18mm 16mm;
 }
 
 /* convpdf wraps content in body.convpdf-default-layout — that class
    rule beats a plain body{} rule (specificity), so the type scale is
    set on the class here. */
 .convpdf-default-layout {
+  /* Do NOT remove the ligature block. See the long note in resume.css:
+     DejaVu Sans applies liga/clig by default in Chromium, so ff / fi / fl / ffi
+     land in the ToUnicode map as U+FB00..U+FB03 and exact string matching sees
+     "Staﬀ", "Cloudﬂare", "oﬃcial", "ﬁrst", "ﬂows", "traﬃc" — including in the
+     "Re:" line naming the job. Suppression at the CSS level keeps normal
+     Type0 / CIDFontType2 embedding (no Type 3). Check after any change:
+       convpdf david-barratt-cover.md -o /tmp/c.pdf -c styles/cover.css \
+         -f letter && python3 -c "import pypdf,re;t=''.join(p.extract_text() \
+       for p in pypdf.PdfReader('/tmp/c.pdf').pages);print(re.findall(r'[\ue000-\ue0ff\ufb00-\ufb06]',t))"
+     Must print []. Then confirm "Senior Staff Frontend Engineer" is verbatim. */
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0, "clig" 0, "dlig" 0;
   font-family: "Source Sans Pro", -apple-system, "Helvetica Neue", Arial, sans-serif;
   font-size: 10.5pt;
   line-height: 1.5;
